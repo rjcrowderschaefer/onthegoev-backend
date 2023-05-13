@@ -2,7 +2,7 @@
 
 ## Overview
 
-On The Go! Electric is a website that provides the end user with information around owning an electric vehicle, including: trip planning (best practices/tips & tricks), EV charging locations and parking lot information. The site also includes a trip planning tool that allows a user to create a new trip with details and custom notes that can be referenced  during their trip.
+On The Go! Electric is a website that provides the end user with information around owning an electric vehicle, including: top vehicles for 2023, best practices/know before you go information, and EV charging locations. The site also includes a trip planning tool that allows a user to create a new trip with details and custom notes that can be referenced  during their trip.
 
 ### Main site nav & details:
 
