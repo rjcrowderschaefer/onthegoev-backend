@@ -8,7 +8,7 @@ const CarInfo = [
         msrpStart: 41600,
         msrpEnd: 56100,
         mpgCity: 141,
-        mpcHwy: 115,
+        mpgHwy: 115,
         review: "The 2023 Hyundai Ioniq 6 offers an expertly crafted and spacious cabin, two solid powertrains, a smooth ride and a wealth of standard features. It also has excellent driving range. The trunk is small, and the rear row could use more headroom, but the Ioniq 6 is still a great electric car overall.",
         img1: "https://cars.usnews.com/pics/size/350x262/images/Auto/custom/15122/2023_Hyundai_Ioniq_6_1.jpg",
         img2: "https://cars.usnews.com/pics/size/390x290/images/Auto/custom/15122/2023_Hyundai_Ioniq_6_49.jpg",

@@ -6,13 +6,16 @@ const PORT = process.env.PORT || 4000;
 const carInformationController = require('./controllers/cars')
 
 const cors = require('cors');
-app.use(cors());
+const morgan = require('morgan')
+
 app.use(express.json());
+app.use(cors());
+app.use(morgan("dev"));
 
 app.get('/', (req, res) => {
     res.send("hello EV world");
 })
 
-app.use('/cars', carInformationController);
+app.use('/top-evs-2023', carInformationController);
 
 app.listen(PORT, () => console.log(`Listening on PORT ${PORT}`));

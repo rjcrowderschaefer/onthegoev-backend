@@ -9,8 +9,10 @@ const Cars = require('../models/Cars');
 
 router.get('/', async (req, res, next) => {
     try {
-        await Cars.deleteMany({});
-        const cars = await Cars.insertMany(CarInfo);
+        console.log(req.params)
+        // await Cars.deleteMany({});
+        // const cars = await Cars.insertMany(CarInfo);
+        const cars = await Cars.find({})
         // res.redirect('/cars');
         res.json(cars);
         // return(cars)
@@ -20,5 +22,17 @@ router.get('/', async (req, res, next) => {
         next();
     }
 })
+
+router.get('/:id', async (req, res) => {
+    try {
+        console.log(req.params.id)
+        const myCar = await Cars.findById(req.params.id);
+        console.log(myCar)
+        res.json(myCar)
+    } catch(err) {
+        console.log(err);
+        next();
+    }
+});
 
 module.exports = router 
