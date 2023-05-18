@@ -4,6 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 // const methodOverride = require('method-override');
 const carInformationController = require('./controllers/cars')
+const tripPlannerInformationController = require('./controllers/trips')
 
 const cors = require('cors');
 const morgan = require('morgan')
@@ -17,5 +18,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/top-evs-2023', carInformationController);
+
+app.use('/trip-planner', tripPlannerInformationController);
 
 app.listen(PORT, () => console.log(`Listening on PORT ${PORT}`));
