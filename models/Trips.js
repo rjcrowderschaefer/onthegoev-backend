@@ -2,6 +2,11 @@ const mongoose = require('../config/db.connection.js');
 
 const tripPlannerInfoSchema = new mongoose.Schema(
     {
+        img: {
+            type: String,
+            required: [true],
+            unique: false
+        },
         tripName: {
             type: String,
             required: [true],
@@ -24,6 +29,11 @@ const tripPlannerInfoSchema = new mongoose.Schema(
         },
         tripEnd: {
             type: String,
+            required: [true],
+            unique: false
+        },
+        carYear: {
+            type: Number,
             required: [true],
             unique: false
         },
