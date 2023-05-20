@@ -16,4 +16,38 @@ router.get('/', async (req, res, next) => {
     }
 })
 
+router.get('/:id', async (req, res) => {
+    try {
+        console.log(req.params.id)
+        const myTrip = await Trips.findById(req.params.id);
+        console.log(myTrip)
+        res.json(myTrip)
+    } catch(err) {
+        console.log(err);
+        next();
+    }
+});
+
+router.post('', async (req, res, next) => {
+    try {
+        const newTrip = req.body
+        await Trips.create(req.body);
+        console.log(newTrip);
+        res.redirect('/')
+    } catch(err) {
+        console.log(err);
+        next();
+    }
+})
+
+// router.put(':/id', aysnc (req, res, next) => {
+//     try {
+//         const updatedTrip = await Trips.findByIdAndUpdate(req.params.id, req.body);
+//         res.redirect('/trip-planner');
+//     } catch(err) {
+//         console.log(err);
+//         next();
+//     }
+// })
+
 module.exports = router
