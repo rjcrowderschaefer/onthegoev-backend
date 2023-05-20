@@ -40,14 +40,23 @@ router.post('', async (req, res, next) => {
     }
 })
 
-// router.put(':/id', aysnc (req, res, next) => {
-//     try {
-//         const updatedTrip = await Trips.findByIdAndUpdate(req.params.id, req.body);
-//         res.redirect('/trip-planner');
-//     } catch(err) {
-//         console.log(err);
-//         next();
-//     }
-// })
+router.put('/:id', async (req, res, next) => {
+    try {
+        const updatedTrip = await Trips.findByIdAndUpdate(req.params.id, req.body);
+        res.json(updatedTrip);
+    } catch(err) {
+        console.log(err);
+        next();
+    }
+})
+
+router.delete('/:id', async (req, res) => {
+    try {
+        const deletedTrip = await Trips.findByIdAndDelete(req.params.id);
+        res.redirect('/trip-planner');
+    } catch(err) {
+        console.log(err);
+    }
+})
 
 module.exports = router
