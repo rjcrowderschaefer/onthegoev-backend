@@ -23,7 +23,7 @@ router.get('/', async (req, res, next) => {
     }
 })
 
-router.get('/:id', async (req, res) => {
+router.get('/:id', async (req, res, next) => {
     try {
         console.log(req.params.id)
         const myCar = await Cars.findById(req.params.id);
