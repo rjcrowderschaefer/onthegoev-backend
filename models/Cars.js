@@ -33,13 +33,13 @@ const carInfoSchema = new mongoose.Schema(
         },
 
         msrpStart: {
-            type: Number,
+            type: String,
             required: [true],
             unique: false,
         },
 
         msrpEnd: {
-            type: Number,
+            type: String,
             required: [true],
             unique: false,
         },
