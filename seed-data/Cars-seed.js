@@ -37,7 +37,7 @@ const CarInfo = [
         make: "Chevrolet",
         rank: 2,
         year: 2023,
-        score: 8.0,
+        score: 8.1,
         msrpStart: '$25,600',
         msrpEnd: '$28,800',
         mpgCity: 131,
