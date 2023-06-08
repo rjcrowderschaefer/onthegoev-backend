@@ -2,7 +2,6 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 4000;
-// const methodOverride = require('method-override');
 const carInformationController = require('./controllers/cars')
 const tripPlannerInformationController = require('./controllers/trips')
 const contactController = require('./controllers/contact');

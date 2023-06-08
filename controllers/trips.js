@@ -33,7 +33,6 @@ router.post('', async (req, res, next) => {
         const newTrip = req.body
         await Trips.create(req.body);
         console.log(newTrip);
-        // res.json(newTrip);
         res.json(await Trips.find({}));
     } catch(err) {
         console.log(err);
