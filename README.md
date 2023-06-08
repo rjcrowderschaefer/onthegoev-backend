@@ -2,7 +2,17 @@
 
 ## Overview
 
-On The Go! Electric is a website that provides the end user with information around owning an electric vehicle, including: top vehicles for 2023, best practices/know before you go information, and EV charging locations. The site also includes a trip planning tool that allows a user to create a new trip with details and custom notes that can be referenced  during their trip.
+A website focused on electric vehicles: top EVs in 2023, trip planning with an EV, key information that an EV owner should know before embarking on a trip and a charging station search option based on zip code. The site allows the end user to:
+
+1. Get information and general stats on electric vehicles in 2023
+2. Plan a trip to ensure the end user is aware of the number of stops they'll have to make to charge their EV
+3. Find charging stations near them
+
+Frontend URL: [On The Go! EV](https://main--stately-cendol-52ec85.netlify.app/)
+
+Backend URL: [On The Go! EV - Backend](https://on-the-go-ev.onrender.com/)
+
+![Screenshot of On The Go! EV home page](https://i.imgur.com/VMcnwv1.png)
 
 ### Main site nav & details:
 
@@ -75,9 +85,5 @@ As an end user of the site, I would like the ability to submit a form to receive
     - Submit button
 - Contact form submission includes a confirmation note
 - Contact form submission does not display on an index page but is added to MongoDB
-
-## Stretch Features
-
-## Wireframes
 
 
